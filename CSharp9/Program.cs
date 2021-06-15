@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharp9
 {
@@ -12,6 +13,7 @@ namespace CSharp9
 
             PersonClass personCl = new("Dona", "Pejnovic");
             PersonClass personCl1 = new("Dona", "Pejnovic");
+            PersonClass personCl2 = new("Vedran", "Perkovic");
 
             //Console.WriteLine("Record Type:");
             //Console.WriteLine($"To string: { personRec }");
@@ -31,18 +33,33 @@ namespace CSharp9
             //Console.WriteLine($"Hash code: { personCl.GetHashCode() }");
             //Console.WriteLine($"Hash code: { personCl1.GetHashCode() }");
 
-            PersonRec personRec4 = personRec with
-            {
-                LastName = "Dosen"
-            };
-            
+            //PersonRec personRec4 = personRec with
+            //{
+            //    LastName = "Dosen"
+            //};
+
             //Console.WriteLine($"To string: { personRec4 }");
 
-            var (fn, ln) = personRec4;
-            Console.WriteLine($"First name: { fn } Last name: { ln }");
+            //var (fn, ln) = personRec4;
+            //Console.WriteLine($"First name: { fn } Last name: { ln }");
 
+            //PersonRec personRec5 = new Developer("Dominik", "Blazic", "C#");
+            //Console.WriteLine($"To string: { personRec5 }");
 
+            //List<PersonClass> people = new() { personCl, personCl2 };
 
+            //foreach (var person in people)
+            //{
+            //    person.Summary = person.FirstName.Length switch
+            //    {
+            //        < 4 => "very short name",
+            //        4 => "short name",
+            //        //> 4 => "Long name",
+            //        _ => "unkown"
+            //    };
+
+            //    Console.WriteLine($"{person.FirstName} has a {person.Summary}");
+            //}
 
         }
     }
